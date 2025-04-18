@@ -1,0 +1,21 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "moduleResolution": "node",  // Ajoute cette ligne
+    "esModuleInterop": true,    // Si ce n'est pas déjà le cas, ajoute aussi cette ligne
+    "skipLibCheck": true        // Permet de sauter les vérifications des types des bibliothèques
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "env.d.ts"
+  ]
+}
